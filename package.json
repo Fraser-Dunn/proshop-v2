@@ -5,7 +5,10 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Fraser Dunn",
   "license": "MIT",
@@ -13,6 +16,11 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "dotenv": "^16.1.4"
+=======
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
+>>>>>>> ca5c40eee3f52f94ebe4dbd6fd6f4d8a84124021
   }
 }
